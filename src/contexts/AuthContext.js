@@ -9,7 +9,7 @@ import {
 
 const ADMIN_EMAILS = [
   'admin@mithramedicare.com',
-  'doctor@mithramedicare.com',
+  'arjunvarmavegesna@gmail.com',
   // Add more admin emails here
 ];
 
