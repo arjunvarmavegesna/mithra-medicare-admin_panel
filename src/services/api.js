@@ -56,4 +56,20 @@ export const getPatients = () =>
 export const getStats = () =>
   api.get('/api/stats').then(r => r.data);
 
+// ---- FAMILY CARDS ----
+export const getFamilyCards = () =>
+  api.get('/api/family-cards').then(r => r.data);
+
+export const getFamilyCardStats = () =>
+  api.get('/api/family-cards/stats/summary').then(r => r.data);
+
+export const updateFamilyCard = (id, data) =>
+  api.patch(`/api/family-cards/${id}`, data).then(r => r.data);
+
+export const deleteFamilyCard = (id) =>
+  api.delete(`/api/family-cards/${id}`).then(r => r.data);
+
+export const checkFamilyCard = (phone) =>
+  api.get(`/api/family-cards/check/${phone}`).then(r => r.data);
+
 export default api;
